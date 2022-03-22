@@ -17,6 +17,7 @@ class CreateCustomersTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');  // user_idカラムを作ってから外部キーの設定になる
             $table->foreign('user_id')->references('id')->on('users');  // 外部キー
+            $table->string('name', 50);
             $table->date('birthday');
             $table->decimal('height', 5,1);
             $table->boolean('gender');
