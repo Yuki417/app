@@ -7,6 +7,9 @@ use App\Customer as AppCustomer;
 use App\Models\Customer;
 use App\Models\Weight;
 
+use DB;
+use Illuminate\support\Facades\Log;
+
 
 class WeightController extends Controller
 {
@@ -21,7 +24,7 @@ class WeightController extends Controller
     // ここまで
 
 
-        // TOP画面
+    // TOP画面
     public function index()
     {
 
