@@ -6,15 +6,14 @@
 @include('nav')
 @section('content')
 
-{{-- 画面遷移リンク --}}
+{{-- 画面遷移リンク
 <a href="{{ route('create') }}">新規登録</a>
 <a href="{{ route('record') }}">体重</a>
 <a href="{{ route('edit') }}">編集</a>
-{{-- <a href="{{ route('graph') }}">グラフ</a>
- --}}<a href="{{ route('confirm') }}">削除</a>
+<a href="{{ route('confirm') }}">削除</a>
+--}}
 
 
-{{-- シンプル体重 --}}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">

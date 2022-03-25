@@ -8,12 +8,12 @@
 
 <h1>ジム会員新規登録画面</h1>
 
-
+{{ dd('確認') }}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">新規作成画面</div>
+                <div class="card-header">新規登録画面</div>
 
                 <div class="card-body">
                     <!-- @if (session('status'))
@@ -39,25 +39,25 @@
                      @csrf
                         <ul class="original_ul">
                             <li>
-                                <label for="clint_name">氏名</label>
-                                <input id="clint_name" name="clint_name" type="text" value="{{old('clint_name')}}"><br>
+                                <label for="name">氏名</label>
+                                <input id="name" name="name" type="text" value="{{old('name')}}"><br>
                             </li>
                             <li>
-                                <label for="birth_date">生年月日</label>
-                                <input id="birth_date"name="birth_date" type="date" value="{{old('birth_date')}}"><br>
+                                <label for="birthday">生年月日</label>
+                                <input id="birthday"name="birthday" type="date" value="{{old('birthday')}}"><br>
                             </li>
                             <li>
-                                <label for="sex">性別</label>
-                                <input id="sex" name="sex" type="radio" value="0" @if(old('sex') == 0) checked @endif>男性
-                                <input name="sex" type="radio" value="1" @if(old('sex') == 1) checked @endif>女性<br>
+                                <label for="gender">性別</label>
+                                <input id="gender" name="gender" type="radio" value="0" @if(old('gender') == 0) checked @endif>男性
+                                <input name="gender" type="radio" value="1" @if(old('gender') == 1) checked @endif>女性<br>
                             </li>
                             <li>
                                 <label for="height">身長</label>
                                 <input id="height" name="height" type="text" value="{{old('height')}}"><br>
                             </li>
                             <li>
-                                <label for="year_month_date">測定年月</label>
-                                <input id="year_month_date" name="year_month_date" type="month" value="{{old('year_month_date')}}"><br>
+                                <label for="weight_date">測定日</label>
+                                <input id="weight_date" name="weight_date" type="month" value="{{old('weight_date')}}"><br>
                             </li>
                             <li>
                                 <label for="weight">体重</label>

@@ -1,12 +1,9 @@
 {{--1-4 新規に作成したファイル　ユーザ登録・ログインへのリンクを作る --}}
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
 
-    <a class="navbar-brand" href="/"></i>戻る</a>
-
+{{--     <a class="navbar-brand" href="/"></i>戻る</a>
+ --}}
     <ul class="navbar-nav ml-auto">
-
-
-
 
 {{--         @guest
         <li class="nav-item">
@@ -14,7 +11,6 @@
         </li>
         @endguest
  --}}
-
 
 {{-- 編集3-3 ログイン画面に遷移--}}
 {{--         @guest
@@ -58,9 +54,6 @@
         </form>
         <!-- Dropdown -->
         @endauth
-
-
-
 
 
 
