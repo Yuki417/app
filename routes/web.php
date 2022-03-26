@@ -20,7 +20,7 @@ Route::resource('/articles', 'WeightController');//->middleware('auth');【ロ�
 
 
 Route::get('/graph', [WeightController::class, 'graph'])->name('graph'); //グラフ画面
-Route::get('/edit/(id}', [WeightController::class, 'edit'])->name('edit');  //編集画面
+Route::get('/edit/{id}', [WeightController::class, 'edit'])->name('edit');  //編集画面
 Route::get('/index', [WeightController::class, 'index'])->name('index'); //一覧TOP画面認画面
 Route::get('/confirm', [WeightController::class, 'confirm'])->name('confirm'); //削除確認画面
 Route::get('/create', [WeightController::class, 'create'])->name('create'); //ジム会員新登録画面

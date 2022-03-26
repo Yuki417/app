@@ -22,7 +22,7 @@
                                 <th scope="col">性別</th>
                                 <th scope="col">生年月日</th>
                                 <th scope="col">体重記録</th>
-                                <th scope="col">グラフをみる</th>
+                                <th scope="col">グラフ</th>
                                 <th scope="col">編集</th>
                                 <th scope="col">削除</th>
                             </tr>

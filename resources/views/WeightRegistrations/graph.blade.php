@@ -1,16 +1,8 @@
-{{--
-https://note.com/laravelstudy/n/ne41d086745bc
-# ChartJSの組み込み　参照
- localhostsだけで見れるのはこっち--}}
-
  @extends('app') {{-- 上のバー ログインなど --}}
-@section('content')
- @include('nav')   {{-- @includeを使うことで、別のビューを取り込めます --}}
-
-
+ @section('content')
+ @include('nav')   {{-- @includeを使うことで、別のビューを取り込める --}}
  @extends('app')
-
- @section('title', '体重グラフ2')
+ @section('title', '体重グラフ')
 
  @section('content')
    <div class="container">
@@ -52,7 +44,7 @@ https://note.com/laravelstudy/n/ne41d086745bc
 		<div class="row justify-content-center">
 			<div class="col-md-12">
 				<div class="card">
-					<div class="card-header">体重グラフ</div>
+					<div class="card-header">グラフ</div>
 						<div class="card-body">
 {{--  							<button id="" class="btn btn-warning" onclick="history./back()">戻る</button>
  --}}

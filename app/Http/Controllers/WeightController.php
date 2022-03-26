@@ -38,13 +38,13 @@ class WeightController extends Controller
     // ここまで4-3
 
 
-    // 編集画面
+    // 編集画面　
     public function edit($id)
     {
-        $customers = Customer::all($id);
-        return view('WeightRegistrations.edit', ['customers' => $customers]);
+        $customer = Customer::find($id);
+        return view('WeightRegistrations.edit', ['customer' => $customer]);
 
-       // return view('WeightRegistrations.edit');
+       //return view('WeightRegistrations.edit');
     }
     //ここまで
 
