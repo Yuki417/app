@@ -39,14 +39,17 @@ class WeightController extends Controller
 
 
     // 編集画面
-    public function edit()
+    public function edit($id)
     {
-        return view('WeightRegistrations.edit');
+        $customers = Customer::all($id);
+        return view('WeightRegistrations.edit', ['customers' => $customers]);
+
+       // return view('WeightRegistrations.edit');
     }
     //ここまで
 
 
-    // 【ジム会員新登録画面】
+    // ジム会員新登録画面
     public function registration()
     {
         return view('WeightRegistrations.registration');
@@ -54,7 +57,7 @@ class WeightController extends Controller
     // ここまで
 
 
-    // 【体重記録画面】
+    // 体重記録画面
     public function record()
     {
         return view('WeightRegistrations.record');

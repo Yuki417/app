@@ -1,14 +1,9 @@
 @extends('app')
-
 @section('title', 'ジム会員新規登録画面')
-
 @include('nav')
-
 @section('content')
 
-<h1>ジム会員新規登録画面</h1>
 
-{{ dd('確認') }}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -32,7 +27,7 @@
                         </div>
                     @endif
 
-{{-- ここは何？                    <form action="{{route('WeightController.post')}}" method="post">
+{{-- ここは何？後々設定が必要                    <form action="{{route('WeightController.post')}}" method="post">
  --}}
 
 
@@ -55,11 +50,11 @@
                                 <label for="height">身長</label>
                                 <input id="height" name="height" type="text" value="{{old('height')}}"><br>
                             </li>
-                            <li>
-                                <label for="weight_date">測定日</label>
+{{--                             <li>
+                                <label for="weight_date">測定月</label>
                                 <input id="weight_date" name="weight_date" type="month" value="{{old('weight_date')}}"><br>
                             </li>
-                            <li>
+ --}}                            <li>
                                 <label for="weight">体重</label>
                                 <input id="weight" name="weight" type="text" value="{{old('weight')}}"><br>
                             </li>

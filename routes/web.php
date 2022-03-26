@@ -20,18 +20,8 @@ Route::resource('/articles', 'WeightController');//->middleware('auth');【ロ�
 
 
 Route::get('/graph', [WeightController::class, 'graph'])->name('graph'); //グラフ画面
-Route::get('/edit', [WeightController::class, 'edit'])->name('edit');  //編集画面
+Route::get('/edit/(id}', [WeightController::class, 'edit'])->name('edit');  //編集画面
 Route::get('/index', [WeightController::class, 'index'])->name('index'); //一覧TOP画面認画面
 Route::get('/confirm', [WeightController::class, 'confirm'])->name('confirm'); //削除確認画面
 Route::get('/create', [WeightController::class, 'create'])->name('create'); //ジム会員新登録画面
 Route::get('/record', [WeightController::class, 'record'])->name('record'); //体重記録画面
-
-
-/* 6の記述方法
-Route::get('/WeightRegistrations/graph', 'WeightController@graph')->name('graph');  //グラフ画面
-Route::get('/WeightRegistrations/edit', 'WeightController@edit')->name('edit'); //編集画面
-Route::get('WeightRegistrations/index', 'WeightController@index')->name('index'); //一覧TOP画面認画面
-Route::get('WeightRegistrations/confirm', 'WeightController@confirm')->name('confirm'); //削除確認画面
-Route::get('WeightRegistrations/create', 'WeightController@create')->name('create'); //ジム会員新登録画面】
-Route::get('WeightRegistrations/record', 'WeightController@record')->name('record'); //体重記録画面
- */
