@@ -24,4 +24,4 @@ Route::get('/edit/{id}', [WeightController::class, 'edit'])->name('edit');  //�
 Route::get('/index', [WeightController::class, 'index'])->name('index'); //一覧TOP画面認画面
 Route::get('/confirm', [WeightController::class, 'confirm'])->name('confirm'); //削除確認画面
 Route::get('/create', [WeightController::class, 'create'])->name('create'); //ジム会員新登録画面
-Route::get('/record', [WeightController::class, 'record'])->name('record'); //体重記録画面
+Route::get('/record/{id}', [WeightController::class, 'record'])->name('record'); //体重記録画面

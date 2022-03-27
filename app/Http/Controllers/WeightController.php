@@ -58,9 +58,12 @@ class WeightController extends Controller
 
 
     // 体重記録画面
-    public function record()
+    public function record($id)
     {
-        return view('WeightRegistrations.record');
+        $customer = Customer::find($id);
+        return view('WeightRegistrations.record', ['customer' => $customer]);
+
+        //return view('WeightRegistrations.record');
     }
     // ここまで
 
